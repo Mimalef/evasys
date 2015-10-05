@@ -1,0 +1,20 @@
+<?php require "_header.html" ?>
+
+<table width="620" class="list">
+    <tr>
+        <td>کد</td>
+        <td>نام کاربری</td>
+        <td>رمز عبور</td>
+        <td>آدرس</td>
+    </tr>
+    <?php foreach($res as $row) { ?>
+    <tr>
+        <td><?php echo $row['id']; ?></td>
+        <td><?php echo $row['user']; ?></td>
+        <td><?php echo $row['pass']; ?></td>
+        <td><?php echo $row['addr']; ?></td>
+    </tr>
+    <?php } ?>
+</table>
+
+<?php require "_footer.html" ?>

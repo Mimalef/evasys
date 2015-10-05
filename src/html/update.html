@@ -1,0 +1,25 @@
+<?php require "_header.html" ?>
+
+<form method="post" action="">
+    <table width="620">
+        <tr>
+            <td><label>کد:</label></td>
+            <td><input name="id" type="text" value="<?php echo $id ?>"></td>
+        </tr>
+        <tr>
+            <td><label>نام کاربری:</label></td>
+            <td><input name="user" type="text" value="<?php echo $user ?>"></td>
+        </tr>
+        <tr>
+            <td><label>کلمه عبور:</label></td>
+            <td><input name="pass" type="password" value="<?php echo $pass ?>"></td>
+        </tr>
+        <tr>
+            <td><label>آدرس:</label></td>
+            <td><textarea name="addr"><?php echo $addr ?></textarea></td>
+        </tr>
+    </table>
+    <input value="ویرایش" type="submit" class="button">
+</form>
+    
+<?php require "_footer.html" ?>
